@@ -9,3 +9,10 @@ Server > tomcat v0.0 Server at ... > context.xml
   <!-- just one line -->
 </Context>
 ```
+#### SEVERE: Context initialized 이벤트를 [org.springframework.web.context.ContextLoaderListener] 클래스의 인스턴스인 리스너에 전송하는 동안 예외 발생
+#### org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in ServletContext resource ...
+이 에러가 최상단에 뜰 경우, 아래로 내려가면서 확인해야 한다.   
+> Failed to parse mapping resource: '파일 경로'
+> 당연하지만 '파일 경로'의 저 파일이 문제다.
+
+...나의 경우 중괄호를 괄호로 닫아놓고 1시간동안 오류를 찾고 있었다.
