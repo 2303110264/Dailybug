@@ -4,6 +4,8 @@ Server > tomcat v0.0 Server at ... > context.xml
 ```xml
 <Context>
 ...
-<Resources cachingAllowed="true" cacheMaxSize="100000" />
+  <!-- add this code -->
+  <Resources cachingAllowed="true" cacheMaxSize="100000" />
+  <!-- just one line -->
 </Context>
 ```
