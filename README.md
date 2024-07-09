@@ -24,12 +24,15 @@ Server > tomcat v0.0 Server at ... > context.xml
 1. Qoddi 가입방식 찾아보기   
 2. dbcp 말고 org.postgresql.xa.PGXADataSource 써보기   
 3. url+username+password만 써보기
-4. <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">   
+4.
+```
+   <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">   
     <property name="driverClassName" value="org.postgresql.ds.PGSimpleDataSource"/>   
     <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>   
     <property name="username" value="postgres"/>   
     <property name="password" value="postgres"/>   
 </bean>    
+```
 5. 문서 마저 세팅하고 사람 모으고 생각하기...    
 ### 결론   
 *세팅 건드리기 전에 Bean, Config 경로랑 이름부터 확인해라ㅠㅠ*
