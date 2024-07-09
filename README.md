@@ -30,4 +30,6 @@ Server > tomcat v0.0 Server at ... > context.xml
     <property name="username" value="postgres"/>   
     <property name="password" value="postgres"/>   
 </bean>   
-5. 문서 마저 세팅하고 사람 모으고 생각하기...
+5. 문서 마저 세팅하고 사람 모으고 생각하기...   
+***결론***   
+***세팅 건드리기 전에 Bean, Config 경로랑 이름부터 확인해라ㅠㅠ***
