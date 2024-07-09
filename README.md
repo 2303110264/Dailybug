@@ -18,4 +18,16 @@ Server > tomcat v0.0 Server at ... > context.xml
 > Failed to parse mapping resource: '파일 경로'
 > 당연하지만 '파일 경로'의 저 파일이 문제다.
 
-...나의 경우 중괄호를 괄호로 닫아놓고 1시간동안 오류를 찾고 있었다.
+...중괄호를 괄호로 닫아놓고 1시간동안 오류를 찾고 있었다.   
+
+   ---   
+1. Qoddi 가입방식 찾아보기   
+2. dbcp 말고 org.postgresql.xa.PGXADataSource 써보기   
+3. url+username+password만 써보기
+4. <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">   
+    <property name="driverClassName" value="org.postgresql.ds.PGSimpleDataSource"/>   
+    <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>   
+    <property name="username" value="postgres"/>   
+    <property name="password" value="postgres"/>   
+</bean>   
+5. 문서 마저 세팅하고 사람 모으고 생각하기...
